@@ -15,7 +15,99 @@ body {
 }
 
 .header .logo{
-    font-size: 45px;
+    font-size: 45px;body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: rgb(255, 255, 255);
+    }
+    
+    .header{
+        background-color: rgb(0, 0, 0);
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        color: rgb(255, 255, 255);
+        justify-content: space-between;
+    }
+    
+    .header .logo{
+        font-size: 45px;
+        font-weight: bold;
+        margin-right: 20px;
+    }
+    
+    .header .menu{
+        display: flex;
+        gap: 40px;
+        flex-grow: 1;
+        justify-content: center;
+        margin: 0;
+    }
+    
+    .header .menu a{
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    .header .search{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-left: auto;
+    }
+    
+    .header .search input[type="text"]{
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    
+    .header .search button{
+        padding: 5px 10px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        color: rgb(0, 0, 0);
+    }
+    
+    .header .search button:hover{
+        background-color: rgb(224, 224, 224);
+    }
+    
+    .promo{
+        font-size: 50px;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        padding: 40px 20px;
+        position: relative
+    }
+    
+    .promo .promo2{
+        margin: 20px 0;
+    }
+    
+    .promo .promo2 h1{
+        font-size: 50px;
+        margin: 0;
+    }
+    
+    .promo .promo2 p{
+        font-size: 24px;
+        margin: 10px 0;
+    }
+    
+    .promo .promo2 .buy{
+        background-color: rgb(0, 112, 209);
+        padding: 15px 30px;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 20px;
+    }
     font-weight: bold;
     margin-right: 530px;
 }
