@@ -35,30 +35,55 @@ body {
     font-weight: bold;
 }
 
-.header .search{
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin-left: auto;
+.header .search-box {
+  position: fixed;
+  top: 16px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-radius: 30px;
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+  width: 235px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.header .search input[type="text"]{
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 16px;
+.header .search-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
 }
 
-.header .search button{
-    padding: 5px 10px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    color: rgb(0, 0, 0);
+.header .search-input {
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  color: #555;
+  margin-left: 10px;
+  outline: none;
+  border: none;
+  background: transparent;
+  width: 100%;
+  transition: background-color 0.3s ease, padding 0.3s;
 }
 
-.header .search button:hover{
-    background-color: rgb(224, 224, 224);
+.header .search-input::placeholder {
+  color: #999;
+}
+
+.header .search-input:focus {
+  background-color: #eaeaea;
+  padding-left: 5px;
+  border-radius: 8px;
+}
+
+.header .search-icon {
+  color: #888;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.header .search-box:hover .search-icon {
+  color: #0071e3;
 }
 
 .text-promo-spesial {
