@@ -1,0 +1,139 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
+    background-color: rgb(0, 0, 0);
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    color: rgb(255, 255, 255);
+    justify-content: space-between;
+  }
+  
+  .header .logo {
+    font-size: 45px;
+    font-weight: bold;
+    margin-right: 20px;
+  }
+  
+  .header .menu {
+    display: flex;
+    gap: 40px;
+    flex-grow: 1;
+    justify-content: center;
+    margin: 0;
+  }
+  
+  .header .menu a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .header .menu a:hover {
+    color: #0cdf05;
+    transition: color 0.3s;
+  }
+  
+  .header .search-box {
+    position: relative;
+    top: 16px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border-radius: 30px;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    width: 235px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .header .search-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.25);
+  }
+  
+  .header .search-input {
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    color: #555;
+    margin-left: 10px;
+    outline: none;
+    border: none;
+    background: transparent;
+    width: 100%;
+    transition: background-color 0.3s ease, padding 0.3s;
+  }
+  
+  .header .search-input::placeholder {
+    color: #999;
+  }
+  
+  .header .search-input:focus {
+    background-color: #eaeaea;
+    padding-left: 5px;
+    border-radius: 8px;
+  }
+  
+  .header .search-icon {
+    color: #888;
+    font-size: 24px;
+    transition: color 0.3s ease;
+  }
+  
+  .header .search-box:hover .search-icon {
+    color: #0cdf05;
+  }
+  
+  .powerbank-produk {
+    max-width: 800px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .product-image {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .product-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .product-details {
+    flex: 1;
+    background-color: red;
+    padding-left: 90px;
+    margin-bottom: 100px;
+  }
+  
+  .product-details table {
+    width: 100%;
+    border-collapse: separate;
+    margin: 0 auto;
+  }
+  
+  .product-details th,
+  .product-details td {
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  .product-details .buy-button {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border-radius: 30px;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    width: 235px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
